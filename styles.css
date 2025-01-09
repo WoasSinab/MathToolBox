@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+
+
+body {
+  font-family: "Vazirmatn", serif;
+  font-style: normal;
+  direction: rtl;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.flag-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+.green {
+  background-color: #239F40; /* سبز پرچم ایران */
+  color: white;
+}
+
+.white {
+  background-color: white; /* سفید پرچم ایران */
+}
+
+.red {
+  background-color: #DA0000; /* قرمز پرچم ایران */
+  color: white;
+}
+
+input, select, button {
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

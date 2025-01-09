@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه سه بخشی شبیه پرچم</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flag-container">
+        <!-- بخش سبز (ماشین حساب) -->
+        <div class="section green">
+            <h2>ماشین حساب</h2>
+            <input type="text" id="calcInput" placeholder="عبارت را وارد کنید">
+            <button onclick="calculate()">محاسبه</button>
+            <p id="calcResult"></p>
+        </div>
+
+        <!-- بخش سفید (تبدیل واحد) -->
+        <div class="section white">
+            <h2>تبدیل واحد</h2>
+            <input type="number" id="lengthInput" placeholder="عدد را وارد کنید">
+            <select id="unitSelect">
+                <option value="cmToM">سانتی‌متر به متر</option>
+                <option value="mToCm">متر به سانتی‌متر</option>
+            </select>
+            <button onclick="convertLength()">تبدیل</button>
+            <p id="conversionResult"></p>
+        </div>
+
+        <!-- بخش قرمز (جذر گرفتن) -->
+        <div class="section red">
+            <h2>جذر گرفتن</h2>
+            <input type="number" id="sqrtInput" placeholder="عدد را وارد کنید">
+            <button onclick="calculateSquareRoot()">محاسبه جذر</button>
+            <p id="sqrtResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
