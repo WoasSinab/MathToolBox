@@ -7,10 +7,10 @@ body {
   text-align: right;
   margin: 0;
   padding: 0;
-  background-image: url('https://picodl.com/download/mathematical-formulas-drawn-by-hand-white-chalkboard-background_101002-146.jpg'); /* اضافه شده */
-  background-size: cover; /* اضافه شده */
-  background-position: center; /* اضافه شده */
-  background-attachment: fixed; /* اضافه شده */
+  background-image: url('https://picodl.com/download/mathematical-formulas-drawn-by-hand-white-chalkboard-background_101002-146.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .flag-container {
@@ -18,7 +18,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.8); /* اضافه شده: پس‌زمینه سفید نیمه‌شفاف */
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .section {
@@ -32,34 +32,59 @@ body {
 }
 
 .green {
-  background-color: rgba(35, 159, 64, 0.8); /* سبز پرچم ایران با شفافیت */
+  background-color: rgba(35, 159, 64, 0.8);
   color: white;
 }
 
 .white {
-  background-color: rgba(255, 255, 255, 0.8); /* سفید پرچم ایران با شفافیت */
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .red {
-  background-color: rgba(218, 0, 0, 0.8); /* قرمز پرچم ایران با شفافیت */
+  background-color: rgba(218, 0, 0, 0.8);
   color: white;
 }
 
+/* استایل‌های جدید برای اینپوت‌ها و دکمه‌ها */
 input, select, button {
   margin: 5px 0;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: "Vazirmatn", serif; /* اضافه شده: فونت وزیر */
+  width: 100%; /* عرض کامل */
+  max-width: 300px; /* حداکثر عرض */
+  box-sizing: border-box; /* اضافه شده برای جلوگیری از افزایش اندازه با padding */
 }
 
+/* استایل‌های فرم‌ویز برای اینپوت‌ها */
+input:focus, select:focus {
+  border-color: #007BFF; /* تغییر رنگ حاشیه هنگام فوکوس */
+  outline: none; /* حذف outline پیش‌فرض */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* سایه‌ی آبی هنگام فوکوس */
+}
+
+/* استایل‌های دکمه‌ها */
 button {
   cursor: pointer;
   background-color: #007BFF;
   color: white;
   border: none;
+  transition: background-color 0.3s ease; /* اضافه شده: انیمیشن تغییر رنگ */
 }
 
 button:hover {
   background-color: #0056b3;
+}
+
+/* استایل‌های اضافی برای دکمه‌ها */
+button:active {
+  transform: scale(0.98); /* کوچک‌شدن دکمه هنگام کلیک */
+}
+
+/* استایل‌های placeholder */
+input::placeholder {
+  color: #999; /* رنگ متن placeholder */
+  font-family: "Vazirmatn", serif; /* فونت placeholder */
 }
