@@ -1,12 +1,3 @@
-function calculate() {
-  const input = document.getElementById('calcInput').value;
-  try {
-      const result = eval(input);
-      document.getElementById('calcResult').innerText = `نتیجه: ${result}`;
-  } catch (e) {
-      document.getElementById('calcResult').innerText = 'خطا در محاسبه!';
-  }
-}
 
 function convertLength() {
   const length = parseFloat(document.getElementById('lengthInput').value);
